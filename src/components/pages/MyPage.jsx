@@ -48,8 +48,9 @@ export default function MyPage() {
 
             {/* 고정 플로팅 챗봇 버튼 */}
             <button className="floating-chatbot" onClick={handleGoChatbot} type="button" aria-label="챗봇 열기">
-                <img src="/assets/chatbot.png" alt="챗봇" />
+                <img src="/images/chatbot.png" alt="챗봇" />
             </button>
         </div>
     )
 }
+
