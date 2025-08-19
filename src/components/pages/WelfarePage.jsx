@@ -34,7 +34,7 @@ export default function WelfarePage() {
                 <div className="policy-list">
                     {recommendedPolicies.map((p) => (
                         <div className="policy-card recommended" key={p.id}>
-                            <img src="/assets/govLogo.png" alt="정부기관" />
+                            <img src="/images/govLogo.png" alt="정부기관" />
                             <div className="policy-info">
                                 <p className="policy-title">{p.title}</p>
                                 <p className="policy-sub">
@@ -57,7 +57,7 @@ export default function WelfarePage() {
                     <span>매달 나에게 맞는 복지 알림 받기</span>
                 </button>
                 <button className="floating-chatbot" onClick={handleGoChatbot}>
-                    <img src="/assets/chatbot.png" alt="챗봇" />
+                    <img src="/images/chatbot.png" alt="챗봇" />
                 </button>
 
             </div>

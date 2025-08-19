@@ -4,6 +4,7 @@ import { useApp } from '../../contexts/AppContext.jsx'
 import TabHeader from '../common/TabHeader.jsx'
 import '../../styles/components.css'
 
+
 export default function HomePage() {
     const { userData } = useApp()
     const navigate = useNavigate()
@@ -29,7 +30,6 @@ export default function HomePage() {
             <TabHeader />
 
             {/* 추천 복지 카드 */}
-            {/* ✅ 클릭 시 /policy 이동 */}
             <div
                 className="recommend-card"
                 onClick={handleGoPolicy}
@@ -64,7 +64,7 @@ export default function HomePage() {
                 <h3>많이 본 정책</h3>
                 {policies.map((p) => (
                     <div className="policy-card" key={p.id}>
-                        <img src="/assets/govLogo.png" alt="기관 로고" />
+                        <img src="/images/govLogo.png" alt="기관 로고" />
                         <div>
                             <p className="policy-title">{p.title}</p>
                             <p className="policy-sub">{p.sub}</p>
@@ -97,7 +97,7 @@ export default function HomePage() {
                 <h3>신규 정책</h3>
                 {policies.map((p) => (
                     <div className="policy-card" key={`new-${p.id}`}  onClick={handleGoPolicy}>
-                        <img src="/assets/govLogo.png" alt="기관 로고" />
+                        <img src="/images/govLogo.png" alt="기관 로고" />
                         <div>
                             <p className="policy-title">{p.title}</p>
                             <p className="policy-sub">{p.sub}</p>
@@ -109,7 +109,8 @@ export default function HomePage() {
 
             {/* 챗봇 플로팅 버튼 */}
             <button className="floating-chatbot" onClick={handleGoChatbot} aria-label="챗봇 열기">
-                <img src="/assets/chatbot.png" alt="챗봇" />
+                {/*<img src="/images/chatbot.png" alt="챗봇" />*/}
+                <img src="/images/chatbot.png" alt="챗봇" />
             </button>
         </div>
     )
